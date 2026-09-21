@@ -12,7 +12,7 @@ const connectDB = async () => {
     }
     catch (error ) {
         console.log("Mongodb connecction error", error);
-        process.getMaxListeners(1);
+        process.exit(1);
     }
 };
 

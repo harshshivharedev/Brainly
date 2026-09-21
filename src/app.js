@@ -18,6 +18,11 @@ app.use(express.static("public"))
 app.use(cookieParser())
 
 
+
+
+
+
+
 app.use((error, req, res, next) => {
     const statusCode = error.statusCode || 500;
     return res.status(statusCode).json({

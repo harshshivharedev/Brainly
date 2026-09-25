@@ -137,3 +137,9 @@ const logoutAdmin = asyncHandler ( async (req, res) => {
     .clearCookie("refreshToken", options)
     .json(new ApiResponse(200), {}, "Admin loggedout successfully")
 })
+
+export {
+    registerAdmin,
+    loginAdmin,
+    logoutAdmin
+}
